@@ -1,0 +1,27 @@
+{
+    "name": "gerdemann/driver-rocket-chat",
+    "license": "MIT",
+    "description": "Rocket Chat driver for BotMan",
+    "keywords": [
+        "Bot",
+        "BotMan",
+        "RocketChat"
+    ],
+    "homepage": "http://github.com/gerdemann/driver-rocket-chat",
+    "require": {
+        "php": ">=7.1",
+        "botman/botman": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gerdemann\\BotMan\\Drivers\\RocketChat\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Gerdemann\\BotMan\\Drivers\\RocketChat\\Providers\\RocketChatServiceProvider"
+            ]
+        }
+    }
+}
